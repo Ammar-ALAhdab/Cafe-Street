@@ -36,9 +36,9 @@ export interface ProductsProps {
 
 function Hero({ products, actions }: propsType) {
   return (
-    <section className="w-full bg-accents h-[800px] sm:h-[1200px] relative xl:px-20 xs:px-10  max-xs:px-4 pt-5 overflow-hidden">
+    <section className="w-full bg-accents h-[1000px] sm:h-[1200px] relative xl:px-20 xs:px-10  max-xs:px-4 pt-5 overflow-hidden">
       <Navbar />
-      <div className="w-full h-svh mt-[50px] relative flex items-center justify-start md:justify-between gap-6 z-20">
+      <div className="w-full h-svh pt-[200px] relative flex items-start justify-start md:justify-between gap-6 z-20">
         <div className="w-full md:w-1/2 shrink flex flex-col items-start justify-center gap-6">
           <h1 className="text-secondary max-sm:text-[32px] max-md:text-[52px] md:text-5xl font-semibold">
             Enjoy your <span className="text-primary">coffee</span> before your
@@ -48,7 +48,7 @@ function Hero({ products, actions }: propsType) {
             Boost your productivity and build your mood with a glass of coffee
             in the morning
           </p>
-          <div className="flex justify-between items-center gap-5 w-fit">
+          <div className="flex justify-between items-center gap-5 max-sm:flex-col w-fit max-sm:w-full">
             <PrimaryButton icon={cart} text="Order now" textColor="white" />
             <button className="text-primary text-xs font-bold py-[10px] px-6">
               More menu
@@ -83,7 +83,6 @@ function Hero({ products, actions }: propsType) {
           </div>
         </div>
       </div>
-      {/* Start Popular Now  Section*/}
       <img
         src={coffeeBeans}
         alt="coffee beans"
