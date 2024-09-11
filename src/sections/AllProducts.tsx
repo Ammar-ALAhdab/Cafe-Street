@@ -15,7 +15,7 @@ function AllProducts({ products, actions }: propsType) {
 
   return (
     <section
-      className="w-full relative z-30 max-sm:px-4 sm:px-10 xl:px-20 py-5 mb-[100px]"
+      className="w-full relative z-30 max-sm:px-8 sm:px-10 xl:px-20 py-5 mb-[100px]"
       id="products"
     >
       <SectionHeadingText text="All Product in menu" />
