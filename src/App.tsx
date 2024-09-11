@@ -12,7 +12,8 @@ import Footer from "./sections/Footer";
 function App() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string |null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [error, setError] = useState<string | null | any>(null);
   const [popularProducts, setPopularProducts] = useState([]);
 
   useEffect(() => {
@@ -31,7 +32,7 @@ function App() {
         setPopularProducts(popularProducts.slice(0, 3));
       } catch (error) {
         console.error(error);
-        setError(error?.message || "error");
+        setError(error);
         setLoading(false);
       } finally {
         setLoading(false);
