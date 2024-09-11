@@ -32,7 +32,7 @@ function Delivery() {
       id="delivery"
     >
       <SectionHeadingText text="How to use delivery service" />
-      <div className="flex justify-center items-center gap-4 flex-wrap max-sm:flex-col max-sm:gap-4">
+      <div className="flex justify-center items-center gap-4 flex-wrap max-sm:flex-col max-sm:gap-8">
         {DELIVERY_BOXES.map((box) => {
           return <DeliveryBox box={box} key={box.id} />;
         })}
